@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Abrar & Aljosa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+
+	<!-- Favicons -->
+	<link href="/images/diamond.png" rel="icon">
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'type='text/css'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#myModal").modal('show');
+		});
+	</script>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<style>
+.simply-countdown {
+    /* The countdown */
+    margin-bottom: 2em;
+  }
+  
+  .simply-countdown > .simply-section {
+    /* coutndown blocks */
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+	background-color: transparent;
+    
+  }
+  .simply-countdown > .simply-section > div {
+    /* countdown block inner div */
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .simply-countdown > .simply-section .simply-amount,
+  .simply-countdown > .simply-section .simply-word {
+    display: block;
+    font-weight: bold;
+    color: #fffcef;
+    /* amounts and words */
+  }
+  
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 25px;
+    
+    /* amounts */
+  }
+  
+  .simply-countdown > .simply-section .simply-word {
+    color: #fffcef;
+   
+    text-transform: uppercase;
+    font-size: 10px;
+    /* words */
+  }
+@font-face {
+  font-family: 'OraSepira';
+  src: url("fonts/Ora_Sepira/Ora_Sepira_Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TropicaGardensSans';
+  src: url("../wedding/fonts/Tropica_Gardens/tropica-gardens-sans.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TropicaGardensScript';
+  src: url("../wedding/fonts/Tropica_Gardens/tropica-gardens-script.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TropicaGardensSerif';
+  src: url("fonts/Tropica_Gardens/tropica-gardens-serif.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TropikaIslandInt';
+  src: url("fonts/Tropika_Island/Tropika_Island_Int.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TropikaIslandScript';
+  src: url("../wedding/fonts/Tropika_Island/Tropika_Island_Script_Casual.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+#fh5co-event {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+#storyParagraph1, #storyParagraph2, #storyParagraph3 {
+ display: none;
+		}
+.see-more, .see-less{
+	border: none; 
+	background-color: transparent; 
+	cursor: pointer;
+}
+.see-less{
+	display: none;
+}
+.carousel-container {
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .carousel-item {
+            flex-shrink: 0;
+            width: 100%;
+            min-width: 100%;
+        }
+        #carousel-container {
+            overflow: hidden;
+        }
+
+        #carousel {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        #carousel-item {
+            flex-shrink: 0;
+            width: 100%;
+            min-width: 100%;
+        }
+	.reservation-button {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.book-button {
+    border: 2px solid #9EC183; /* Customize the button background color */
+    background-color: #9EC183;
+	color: #fff; /* Customize the button text color */
+    padding: 10px 40px;
+
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.book-button:hover {
+    background-color: transparent;
+	color: whitesmoke;
+	border: 2px solid #9EC183; /* Customize the button background color on hover */
+}
+@media screen and (max-width: 425px) {
+  #fh5co-header .display-tc h1,
+  #fh5co-counter .display-tc h1,
+  .fh5co-cover .display-tc h1 {
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #fh5co-header .display-tc h1,
+  #fh5co-counter .display-tc h1,
+  .fh5co-cover .display-tc h1 
+  {
+    font-family: 'OraSepira';
+    margin: 18% 0 10% 0;
+    font-size: 82px;
+  }
+  .book-button{
+      font-size: 3rem;
+  }
+  .reservation-button{
+      bottom: 60px;
+  }
+}
+
+
+/* Schedule */
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border-radius: 26px;
+	background-color: rgb(109,113,88, 0.7);;
+    position: relative;
+    padding: 1.8rem;
+   	margin-bottom: 20%;
+    transition: 0.5s ease-out;
+    overflow: visible;
+   }
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #9EC183;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+   }
+   
+   .text-body {
+    text-align: left;
+    margin-right: 5%;
+    margin-top: -6%;
+    color: black;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #009f9f;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }
+   .modal-header{
+	border: none;
+   }
+
+   #colored-icon {
+  filter: invert(1); /* Invert the colors (black to white) */
+}
+
+
+	</style>
+
+
+<body>
+
+	<div class="fh5co-loader"></div>
+
+	
+	<div id="page">
+
+		<div id="myModal" class="modal fade" data-bs-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body" style="text-align: center;">
+						<h2 style="font: bold; font-family: 'TropikaIslandInt'; color: #9EC183;">You are invited to Abrar & Aljosa's Wedding!</h2>
+						<p style="color: #000;">We are excited to have you! Please click the RVSP to see flight, accommodation, and other important details. See you soon!</p>
+						<a href="reservation.php" class="btn btn-sm rvsp" style="padding-left: 10%; padding-right: 10%; font-size: 1.7rem">RVSP NOW</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row nav">
+					<div class="col-xs-5">
+					</div>
+					<div class="col-xs-7 text-right menu-1">
+						<ul>
+							<li><a href="#story">Our Story</a></li>
+							<li><a href="#fh5co-counter">Location</a></li>
+							<li><a href="#fh5co-event">Schedule</a></li>
+							<li><a href="reservation.php">Reservation</a></li>
+							<li><a href="contact.php">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+
+		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/header1.png); background-size: cover; background-repeat: no-repeat;" data-stellar-background-ratio="0.5">
+			<!-- <div class="overlay"></div> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<h1 style="font-family:'OraSepira';">Abrar &amp; Aljosa</h1>
+								<h2 style="font: bold;">May 1, 2024 | Welcoming Dinner <br> May 2, 2024 | Wedding Day</h2>
+								<h2 style="font-size: 1.5rem; margin-bottom: 6%;">Panglao, Bohol, Philippines</h2>
+								<div class="simply-countdown simply-countdown-one" style="background-color: transparent;"></div>
+								<h2></h2>
+								<p><a href="reservation.php" class="btn btn-sm rvsp"
+										style="padding-left: 10%; padding-right: 10%; font-size: 1.7rem">RVSP NOW</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		
+
+		
+
+		<div id="story"  class="fh5co-section-gray" role="banner" style="background-image:url(images/story.png); background-size: cover; background-repeat: no-repeat; padding: 7em 0;
+		clear: both;">
+		
+			<div class="container">
+
+
+
+				<div class="row" style="align-items: center;">
+					<div class="col-md-6">
+						<!-- <div class="fh5co-heading animate-box" data-animate-effect="fadeInLeft" style="text-align: center; margin-bottom: 0%;">
+							<h2 style="font-family: 'OraSepira'; color: antiquewhite;">Our Story</h2>
+							<h3 style="color: antiquewhite;">"Two Souls, One Journey: The Enchanting Tale of Abrar and Aljosa's Wedding"</h3>
+						</div> -->
+						<div class="feature-left animate-box" data-animate-effect="fadeInLeft" style="color: #fffcef;">
+							
+							<div class="feature-copy" >
+								
+
+								<p style="text-align: justify; color: #fff; text-shadow: 1px 2px 3px black;">In a world where paths converged and hearts found their home, their story is a testament to the magic of serendipity. 
+									From chance encounters to shared moments that ignited a spark, every chapter is a celebration of two lives destined to intertwine. 
+									Through every laugh, every tear, and every leap of faith, Abrar and Aljosa's bond grew stronger, illuminating the path to a love that knows no boundaries.</p>
+
+								<p><a href="story.html" class="btn btn-sm rvsp" style="padding-left: 10%; padding-right: 10%; font-size: 1.7rem">Read More</a></p>
+							
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-md-6 animate-box fh5co-video" data-animate-effect="fadeInRight" style="height: auto;">
+						<div class="carousel-container" style="border-radius: 20px;">
+							<div class="carousel2" id="carousel">
+								<div class="carousel-item2" id="carousel-item"><img src="images/story1.jpg" alt="Image 1" style="border-radius: 20px; width: 100%; height: 100%; object-fit: contain;"></div>
+								<div class="carousel-item2" id="carousel-item"><img src="images/story2.jpg" alt="Image 2" style="border-radius: 20px;  width: 100%; height: 100%; object-fit: contain;"></div>
+								<div class="carousel-item2" id="carousel-item"><img src="images/story3.jpg" alt="Image 3" style="border-radius: 20px; width: 100%; height: 100%; object-fit: contain;"></div>
+								<div class="carousel-item2" id="carousel-item"><img src="images/story4.jpg" alt="Image 4" style="border-radius: 20px;  width: 100%; height: 100%; object-fit: contain;"></div>
+								<div class="carousel-item2" id="carousel-item"><img src="images/story5.jpg" alt="Image 5" style="border-radius: 20px;  width: 100%; height: 100%; object-fit: contain;"></div>
+								<div class="carousel-item2" id="carousel-item"><img src="images/story6.jpg" alt="Image 6" style="border-radius: 20px;  width: 100%; height: 100%; object-fit: contain;"></div>
+								<div class="carousel-item2" id="carousel-item"><img src="images/story7.jpg" alt="Image 7" style="border-radius: 20px;  width: 100%; height: 100%; object-fit: contain;"></div>
+								<div class="carousel-item2" id="carousel-item"><img src="images/story8.jpg" alt="Image 8" style="border-radius: 20px;  width: 100%; height: 100%; object-fit: contain;"></div>
+								<div class="carousel-item2" id="carousel-item"><img src="images/story9.jpg" alt="Image 9" style="border-radius: 20px;  width: 100%; height: 100%; object-fit: contain;"></div>
+								<div class="carousel-item2" id="carousel-item"><img src="images/story10.jpg" alt="Image 10" style="border-radius: 20px;  width: 100%; height: 100%; object-fit: contain;"></div>
+							</div>
+						</div>
+						<script>
+							const carousel2 = document.querySelector('.carousel2');
+							const items2 = document.querySelectorAll('.carousel-item2');
+							const interval2 = 5000; // Set the interval in milliseconds (5 seconds in this example)
+							let currentIndex2 = 0;
+						
+							// Function to show the current slide
+							function showSlide() {
+								const translateX = -currentIndex2 * 100;
+								carousel2.style.transform = `translateX(${translateX}%)`;
+							}
+						
+							// Function to automatically advance to the next slide
+							function autoAdvance() {
+								currentIndex2 = (currentIndex2 + 1) % items2.length;
+								showSlide();
+							}
+						
+							// Initially show the first slide and start auto-advancing
+							showSlide();
+							setInterval(autoAdvance, interval2);
+						</script>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+		<div id="fh5co-counter" class="fh5co-bg" style="border-radius: 0px; background-image: url('images/location.png'); box-shadow: inset -10px -10px 20px #000, inset 10px 10px 20px #000;">
+			<div class="container">
+				
+				<div class="row animate-box" style="display: block;">
+					<div class="text-center fh5co-heading" style="margin-top: 2%; margin-bottom: 0px;">
+						<h2 style="font-family: 'OraSepira'; color: antiquewhite;">Location</h2>
+					</div>
+				</div>
+	
+				<div class="row" style="display: flex; justify-content: center;" >
+
+					<video autoplay loop muted playsinline style="width: 90%; border-radius: 30px; ">
+						<source src="images/south_palms.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+					</video>
+
+					<div class="reservation-button">
+						<a href="details.html#flight" class="book-button btn btn-default btn-sm">Book a Flight</a>
+					</div>	
+				</div>
+	
+				
+			</div>
+		</div>
+	
+
+		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(images/schedule-beach.png); background-size: cover; background-repeat: no-repeat;">
+			
+			<div class="container">
+				<div class="row animate-box" style="display: block;">
+					<div class="text-center fh5co-heading" style="margin-top: -3%; margin-bottom: -2%; text-align: center;">
+						<h2 style="font-family: 'OraSepira'; color: antiquewhite;">Schedule</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="display-t" >
+						<div class="display-tc" style="display: flex; justify-content: center; align-items: center;">
+							<div class="col ">
+                                <div class="col-md-6 col-sm-6 text-center">
+                                  <div class="event-wrap animate-box card">
+                                    <h3 style="color: #fffcef;font-size: 30px;"><strong>DAY 1</strong><span style="font-size: 1.8rem;">Welcoming Dinner</span></h3>
+								<div>
+                                    <div class="event-col">
+                                      <i class="icon-time-slot" style="color: #fffcef;"></i>
+                                      <span style="color: #fffcef;"><strong>MAY 01, 2024</strong></span>
+                                      <span style="color: #fffcef;">Afternoon</span>
+                                    </div>
+                                    <div class="event-col">
+                                      <img src="images/palm-tree.png" id="colored-icon" style="color: #fffcef; height: 30px; width: 45px;"></img>
+                                      <!-- <span style="color: #fffcef;"><strong>SOUTH PALM RESORT</strong></span>-->
+                                      <span style="color: #fffcef;">Venue to be announced</span> 
+                                    </div>
+								</div>
+                                    <div class="event text-left">
+										<i class="icon-time-slot" style="opacity: 0%;"></i>
+										<h3 style="text-align: center; color: #fffcef;">SCHEDULE</h3>
+                                      <span style="color: #fffcef;"><strong>2PM</strong> - Liquid therapy—swim, clink, drink</span>
+                                      <span style="color: #fffcef;"><strong>4PM</strong> - Sandy show of drumbeats, folk steps, fire eaters</span>
+                                      <span style="color: #fffcef;"><strong>5PM</strong> - Shooting the breeze</span>
+                                      <span style="color: #fffcef;"><strong>7PM</strong> - Cheers! Repeat! Chow down!</span>
+                                    </div>
+									<button class="card-button"><a style="color: #fff;" href="details.html#program1">More info</a></button>
+                                  </div>
+                                </div>
+								<div class="col-md-6 col-sm-6 text-center" >
+									<div class="event-wrap animate-box card">
+									
+										<h3 style="color: #fffcef; font-size: 30px;"><strong>DAY 2</strong><span style="font-size: 1.8rem;">Wedding Day</span></h3>
+									
+									<div>
+										<div class="event-col">
+											<i class="icon-time-slot" style="color: #fffcef;"></i>
+											<span style="color: #fffcef;"><strong>MAY 02, 2024</strong></span>
+                                      		<span style="color: #fffcef;">Afternoon</span>
+											
+										</div>
+										<div class="event-col">
+											<img src="images/palm-tree.png" id="colored-icon" style="color: #fffcef; height: 30px; width: 45px;"></img>
+											<span style="color: #fffcef;"><strong>SOUTH PALM RESORT</strong></span>
+											<span style="color: #fffcef;">Panglao Island, Bohol</span>
+										</div>
+									</div>
+										<div class="event text-left">
+											
+											<i class="icon-time-slot" style="opacity: 0%;"></i>
+											<h3 style="text-align: center; color: #fffcef;">SCHEDULE</h3>
+											<span style="color: #fffcef;"><strong>3PM</strong> - Ushering in, setting the scene</span>
+											<span style="color: #fffcef;"><strong>4PM</strong> - Witnessing the vows</span>
+											<span style="color: #fffcef;"><strong>5PM</strong> - Toasting sunsets</span>
+											<span style="color: #fffcef;"><strong>6PM</strong> - Romantic feast</span>
+										</div>
+										<button class="card-button"><a style="color: #fff;" href="details.html#program2">More info</a></button>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="fh5co-started" role="banner" style="padding: 3rem 0; background-image: url('images/10.png'); background-size: cover; background-repeat: no-repeat;">
+			<div>
+				<div>
+					<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-sm-12 col-md-offset-2 text-center fh5co-heading">
+						<h2 style="font-family: 'OraSepira'; color: antiquewhite;">Flights & Accommodation</h2>
+						<p style="color: #fff;">To make sure you are onboard for our wedding day, we highly recommend to book your travel at least <strong>ONE (1) MONTH</strong> in advance.</p>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-8 col-sm-12 col-md-offset-4 text-center fh5co-heading">
+						<a href="details.html" ><button type="submit" class="btn btn-default btn-block rvsp">Book Now!</button></a>
+					</div>
+				</div>	
+			</div>
+				</div>
+
+				<div>
+					
+				</div>
+
+			</div>
+			
+		</div>
+
+		<div id="fh5co-gallery" class="fh5co-bg" style="background-image:url(images/spots.png); background-size: cover; background-repeat: no-repeat; box-shadow: inset -10px -10px 20px #000, inset 10px 10px 20px #000;">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+						
+						<h2 style="font-family: 'OraSepira'; color: antiquewhite; font-size: 4rem;">Best Spots You Can Visit in Bohol!</h2>
+						
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class="col-md-12">
+						<ul id="fh5co-gallery-list" style="justify-content: center;">
+							
+							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/chocolate_hills.webp); "> 
+							<a href="https://www.google.com/maps/place/Chocolate+Hills/@9.8297288,124.1293758,15z/data=!3m1!4b1!4m6!3m5!1s0x33aa3da1a65d72f7:0xd89c856a3307dd67!8m2!3d9.829708!4d124.1396756!16zL20vMDF2N2dj?entry=ttu" target="_blank">
+								<div class="case-studies-summary">
+									
+									<h2 class="icon-location-pin" style="font-size: 20px;">Chocolate Hills</h2>
+								</div>
+							</a>
+						</li>
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/loboc-river.jpg); ">
+							<a href="https://www.google.com/maps/place/Loboc+River+Cruise/@9.6348028,124.0272504,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4450a8151d9b:0x80a384a306e0aafb!8m2!3d9.6347975!4d124.0298253!16s%2Fg%2F1tx12xjv?entry=ttu" target="_blank" class="color-2">
+								<div class="case-studies-summary">
+									
+									<h2 class="icon-location-pin" style="font-size: 20px;">Loboc River Cruise</h2>
+								</div>
+							</a>
+						</li>
+	
+	
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/man-made-forest.jpg); ">
+							<a href="https://www.google.com/maps/place/Bilar+Man-Made+Forest/@9.6642376,124.0758991,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4158fa167357:0xef93d9624ddbd561!8m2!3d9.6642323!4d124.078474!16s%2Fg%2F12hl93qk2?entry=ttu" target="_blank" class="color-3">
+								<div class="case-studies-summary">
+									
+									<h2 class="icon-location-pin" style="font-size: 20px;">Man-made Forest</h2>
+								</div>
+							</a>
+						</li>
+						
+						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/island-hoping.jpg); ">
+							<a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu" target="_blank" class="color-3">
+								<div class="case-studies-summary">
+									
+									<h2 class="icon-location-pin" style="font-size: 20px;">Island Hopping</h2>
+								</div>
+							</a>
+						</li>
+
+						</ul>		
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div id="fh5co-started" role="banner" style="padding: 3rem 0;">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-sm-12 col-md-offset-2 text-center fh5co-heading">
+						<h2 style="font-family: 'OraSepira'; color: #9EC183;">Contact Us</h2>
+						<p style="color: black;">Feel free to reach out by clicking the button below, and let us know how we can assist you.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-sm-12 col-md-offset-4 text-center fh5co-heading">
+						<a href="contact.php" ><button type="submit" class="btn btn-default btn-block rvsp">Contact Now</button></a>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+	<script src="js/simplyCountdown.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	<script>
+        // Specify the target future date (May 2, 2024)
+			var targetDate = new Date('2024-05-02');
+
+		// Initialize the countdown timer
+			simplyCountdown('.simply-countdown-one', {
+    			year: targetDate.getFullYear(),
+   				month: targetDate.getMonth() + 1,
+    			day: targetDate.getDate()
+			});
+
+    </script>
+
+</body>
+
+</html>
+
+</html>

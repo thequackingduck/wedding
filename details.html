@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Abrar & Aljosa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+
+	<!-- Favicons -->
+	<link href="/images/diamond.png" rel="icon">
+
+	<!-- Inserted CSS 2-->
+	<link rel="stylesheet" href="css2/bootstrap.min.css">
+    <link rel="stylesheet" href="css2/owl.carousel.min.css">
+    <link rel="stylesheet" href="css2/flaticon.css">
+    <link rel="stylesheet" href="css2/slicknav.css">
+    <link rel="stylesheet" href="css2/animate.min.css">
+    <link rel="stylesheet" href="css2/magnific-popup.css">
+    <link rel="stylesheet" href="css2/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css2/themify-icons.css">
+    <link rel="stylesheet" href="css2/slick.css">
+    <link rel="stylesheet" href="css2/nice-select.css">
+    <link rel="stylesheet" href="css2/style.css">
+
+	<!-- Inserted JS -->
+	
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<style>
+		@font-face {
+  font-family: 'OraSepira';
+  src: url("fonts/Ora_Sepira/Ora_Sepira_Regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Flight */
+.card-flight {
+margin-left: 5%;
+  width: 90%;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+}
+
+.card-flight a {
+  text-decoration: none
+}
+
+.content-flight {
+  padding: 1.1rem;
+}
+
+.image-flight {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title-flight {
+  color: #111827;
+  font-size: 2.5rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 2rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 15px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
+.row-flight{
+    display: flex; 
+	justify-content: space-evenly;
+	align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .row-flight, .program{
+    display: block; 
+}
+    .card-flight{
+        margin-bottom: 10%;
+    }
+    
+}
+
+/* <!-- Program --> */
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 90%;
+  height: 100%;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+/* Initially hide the download button */
+.download-link .button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Show the download button on hover */
+.book:hover .download-link .button {
+    display: block;
+}
+
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.sched{
+	margin-left: 5%;
+	margin-bottom: 20%;
+}
+
+
+		@media (max-width: 425px) {
+  /* Adjust the button width to 100% */
+  .btn-block {
+    width: 100%;
+  }
+  .program{
+	display: block;
+  }
+}
+@media only screen and (max-width: 425px) {
+    .travel{
+	display: flex; 
+	flex-direction: row;
+	justify-content: space-between; 
+	align-items: center;
+}
+ 
+}
+
+/* .travel{
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center;
+}
+.travel-card{
+	width: 50%;
+	height: 300px;
+} */
+
+.colored-icon{
+	width: 80px;
+	height: 70px;
+	margin-left: 1%;
+}
+.accordion-item{
+	margin: 3% 5%;
+}
+.accordion{
+	margin-top: 0;
+}
+/* Modal styles */
+.modal {
+            display: none;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Modal content styles */
+        .modal-content {
+			z-index: 1;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            max-height: 80vh; /* Set the maximum height */
+            overflow-y: auto; /* Add vertical scroll if needed */
+        }
+
+        /* Close button styles */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+		
+	</style>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+		<nav class="fh5co-nav" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo">
+							<a href="index.html"><img src="images/diamond.png" class="logo"></a>
+						</div>
+					</div>
+					<!-- <div class="col-xs-10 text-right menu-1">
+						<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="reservation.php">Reservation</a></li>
+								<li><a href="contact.php">Contact Us</a></li>
+						</ul>
+					</div> -->
+				</div>
+				
+			</div>
+		</nav>
+
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/header1.jpg); background-size: cover; background-repeat: no-repeat;">
+		<div class="overlay"></div>
+			<div class="fh5co-container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t">
+							<div class="display-tc animate-box" data-animate-effect="fadeIn">
+								<h1 style="font-family: 'OraSepira';">Wedding Details</h1>
+								<h2>Discover all the exciting details of our big day, from cozy accommodation options to the fun-filled wedding program, as we invite you to join us in celebrating our love story!</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+
+	<div id="fh5co-started" role="banner" style="padding: 3rem 0; background-image: url('images/10.png'); background-size: cover;">
+		<div class="row animate-box">
+			<div class="col-md-8 col-sm-12 col-md-offset-2 text-center fh5co-heading">
+				<h2 style="font-family: 'OraSepira'; color: #ffffff;">Travel</h2>
+				<p style="color: white; font-weight: normal;">To ensure you are onboarded for our wedding day, we highly recommend booking your travel for at least <strong><br>ONE (1) MONTH IN ADVANCE</strong>.</p>
+				
+			</div>
+		</div>
+		<div class="row animate-box" style="margin-top: -20px;">
+			<div class="col-lg-6 col-sm-12 accordion" id="internationalaccordion">
+				<div class="accordion-item" style="border: #9EC183;">
+				  <h2 class="accordion-header">
+					<button class="accordion-button collapsed" style="background-color: #9EC183;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					  <h2 class="mt-4" style="font-size: 2rem; font-weight: bold;">For International</h2>
+					</button>
+				  </h2>
+				  <div id="collapseOne"  class="accordion-collapse collapse" data-bs-parent="#internationalaccordion">
+					<div class="accordion-body">
+						<h4 class="card-title mb-5 text-center">We highly recommend booking your flights through the Airlines below for convenience:</h4>
+						<div style="display: flex; justify-content: space-evenly; align-items: center;">
+						  <a href="https://www.philippineairlines.com/" target="_blank" style="cursor: pointer;"><img src="images/philippine-airlines.png" class="colored-icon" alt="Plane Icon"></a>
+						  <a href="https://www.emirates.com/ph/english/" target="_blank" style="cursor: pointer;"><img src="images/emirates.png" class="colored-icon" alt="Plane Icon"></a>
+						  <a href="https://www.qatarairways.com/en-ph/homepage.html" target="_blank" style="cursor: pointer;"><img src="images/qatar-airways.png" class="colored-icon" alt="Plane Icon"></a>
+						  <a href="https://www.etihad.com/en-ph/" target="_blank" style="cursor: pointer;"><img src="images/etihad.png" class="colored-icon" alt="Plane Icon"></a>
+						</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm-12 accordion" id="localaccordion">
+				<div class="accordion-item" style="border: #9EC183;">
+				  <h2 class="accordion-header">
+					<button class="accordion-button collapsed" style="background-color: #9EC183;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						<h2 class="mt-4" style="font-size: 2rem; font-weight: bold; text-align: center;">For Local</h2>
+					</button>
+				  </h2>
+				  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#localaccordion">
+					<div class="accordion-body">
+						<h4 class="card-title mb-5 text-center">For flight or ferry transpo going to Bohol, we recommend you contact our partner travel & tours agency to assist you.</h4>
+						<div style="display: flex; justify-content: center; align-items: center;">
+				  			<a href="https://www.facebook.com/toursmerrygotravels" target="_blank" style="cursor: pointer; font-size: 1.4rem;"><img src="images/merry-go-travels.jpg" class="colored-icon" alt="Plane Icon"></a>
+						</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+        
+		  
+    </div>
+
+	<div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="closeModalBtn">&times;</span>
+			
+            <h2>Room Accommodation</h2>
+		
+			<p style="font-weight: normal;">To proceed with the room reservation, please find below special room rates with the inclusions:</p>
+            <table class="table">
+				<thead>
+				  <tr>
+					<th scope="col">May 2024</th>
+					<th scope="col">2024 Special Rate (per night)</th>
+					<th scope="col">Published Rates</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>Deluxe Garden View</td>
+					<td>Php 9,000.00</td>
+					<td>Php 12,000.00</td>
+				  </tr>
+				  <tr>
+					<td>Deluxe Pool View</td>
+					<td>Php 10,000.00</td>
+					<td>Php 13,000.00</td>
+				  </tr>
+				  <tr>
+					<td>Deluxe Beachfront</td>
+					<td>Php 11,000.00</td>
+					<td>Php 14,000.00</td>
+				  </tr>
+				  <tr>
+					<td>Premium Beachfront</td>
+					<td>Php 15,500.00</td>
+					<td>Php 19,000.00</td>
+				  </tr>
+				  <tr>
+					<td>Beach Villa</td>
+					<td>Php 19,500.00</td>
+					<td>Php 22,000.00</td>
+				  </tr>
+				  <tr>
+					<td>Extra Person Charge</td>
+					<td>Php 2,500.00</td>
+					<td>Php 2,500.00</td>
+				  </tr>
+				</tbody>
+			</table>
+			<h2>Room Inlusions</h2>
+    <ul>
+        <li>Room Accomodation</li>
+        <li>Complimentary Breakfast</li>
+        <li>Welcome Drinks upon Arrival</li>
+		<li>Welcome Amenities</li>
+		<li>Complimentary Use of Kayak or Paddle Board for 30 minutes</li>
+		<li>Nightly Turn-down Service</li>
+		<li>Complimentary Bottled Water in the Room</li>
+		<li>Complimentary Wi-Fi Access</li>
+		<li>Complimentary Coffee/Tea Making Facilities (Villas)</li>
+		<li>Complimentary Use of Gym and Tennis Court</li>
+		<li>Complimentary Use of Bambikes for Three (3) hours</li>
+    </ul>
+<p style="font-weight: normal;">To book the rooms, please find the <strong>BOOKING CODE</strong> to use above the special rates : <strong>ABRAR&ALJOSA WEDDING</strong>.
+	<br>Please send all booking inquiries to <strong>Ms. Cherry</strong> at <a href="mailto:sam@southpalmresort.com" target="_blank">sam@southpalmresort.com</a>. Please let us know how we can assist you further. Thank you!</p>
+<!-- <a href="https://www.facebook.com/SouthPalmsResortPanglao" target="_blank" class="action" id="closeModalBtn">
+	Book Now
+	<span aria-hidden="true">
+	  →
+	</span>
+  </a> -->
+  <div>
+  <a href="https://www.facebook.com/SouthPalmsResortPanglao" target="_blank"><button type="submit" class="btn btn-default btn-block rvsp">Book Now!</button></a>
+        </div>
+	</div>
+    </div>
+
+
+	<div id="fh5co-started" role="banner" style="background-image:url(images/details.png); background-size: cover; background-repeat: no-repeat;">
+         <!-- Flight!-->
+		 <div class="row" id="flight">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+						<h2 style="font-family: 'OraSepira'; color: #fff;">Accommodations</h2>
+						<p style="color: #fff; font-weight: normal;">Rest easy with our handpicked selection of nearby hotels and lodging choices to suit your preference.</p>
+					</div>
+				</div>
+			 <!-- <h2 class="tm-text-primary" style="text-align: center; font-family: 'SergioTrendy'; font-size: 3rem; text-shadow: 2px 2px 4px rgb(255, 255, 255)">Accomodations</h2> -->
+			<div class="row-flight animate-box">
+				
+				 <div class="col">
+					 <div class="card-flight">
+						 <div class="image-flight">
+							 <img src="images/south_palm_resort.jpg" style="height: 100%; width: 100%;">
+						 </div>
+						  <div class="content-flight">
+							  <p class="title-flight" style="margin-bottom: 0%;">
+								South Palm Resort
+							  </p>
+							  
+						
+							<a id="openModalBtn" class="action" >
+							  Find out more
+							  <span aria-hidden="true">
+								→
+							  </span>
+							</a>
+						  </div>
+						</div>
+				 </div>
+ 
+				 <div class="col">
+					 <div class="card-flight">
+						 <div class="image-flight">
+							 <img src="images/bohol_beach_club.jpg" style="height: 100%; width: 100%;">
+						 </div>
+						  <div class="content-flight">
+							
+							  <p class="title-flight" style="margin-bottom: 0%;">
+								Bohol Beach Club
+							  </p>
+				
+						
+							<a class="action" href="https://www.facebook.com/boholbeachclubresort" target="_blank">
+							  Find out more
+							  <span aria-hidden="true">
+								→
+							  </span>
+							</a>
+						  </div>
+						</div>
+				 </div>
+ 
+				 <div class="col">
+					 <div class="card-flight">
+						 <div class="image-flight">
+							 <img src="images/dumaluan-beach-front.jpg" style="height: 100%; width: 100%;">
+						 </div>
+						  <div class="content-flight">
+						
+							  <p class="title-flight" style="margin-bottom: 0%;">
+								Dumaluan Beach
+							  </p>
+			           
+						
+							<a class="action" href="https://www.facebook.com/dumaluan.beach" target="_blank">
+							  Find out more
+							  <span aria-hidden="true">
+								→
+							  </span>
+							</a>
+						  </div>
+						</div>
+				 </div>
+ 
+			</div>
+			 
+			 
+ 
+			 
+		
+	</div>
+
+	<div id="fh5co-started" role="banner" style="background-image:url(images/details2.png); background-size: cover; background-repeat: no-repeat;">
+		<!-- Flight!-->
+		<div class="row">
+				   <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					   <h2 style="font-family: 'OraSepira'; color: #fff;">Program</h2>
+					   <p style="color: #fff; font-weight: normal;">Get ready to celebrate with us! Explore the exciting details of our wedding day in these wedding programs, and don't forget to click the download button to keep a digital copy at your fingertips.</p>
+				   </div>
+			   </div>
+			   <div class="row program animate-box" id="program1" >
+
+				<div class="col sched">
+					<div class="book" style="position: relative;">
+						<a href="img/day1.png" download="day1.png" class="download-link">
+							<button class="button"><i class="icon icon-download"></i></button>
+						</a> 
+						<img src="images/day1.png" style="width: 100%; height: 100%;">
+						<div class="cover">
+							<p>DAY 1</p>
+						</div>
+					</div>                
+				</div>
+	
+				<div class="col sched" id="program2">
+					<div class="book" style="position: relative;">
+						<a href="images/day2.png" download="day2.png" class="download-link">
+							<button class="button"><i class="icon icon-download"></i></button>
+						</a>                    
+						<img src="images/day2.png" style="width: 100%; height: 100%;">
+						<div class="cover">
+							<p style="text-align: center;">DAY 2</p>
+						</div>
+					</div>                
+				</div>
+	
+			 </div>  
+		  
+			
+			
+
+			
+	   
+   </div>
+
+
+	</div>
+    
+
+	
+	<div id="fh5co-started" role="banner" style="padding: 3rem 0;">
+        <div class="container">
+            <div class="row animate-box">
+                <div class="col-md-8 col-sm-12 col-md-offset-2 text-center fh5co-heading">
+                    <h2 style="font-family: 'OraSepira'; color: #9EC183;">Contact Us</h2>
+                    <p style="color: black; font-weight: normal;">Feel free to reach out by clicking the button below and let us know how we can assist you.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-12 col-md-offset-4 text-center fh5co-heading">
+                    <a href="contact.php" ><button type="submit" class="btn btn-default btn-block rvsp">Contact Now</button></a>
+                </div>
+            </div>	
+        </div>
+    </div>
+
+
+	
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- countTo -->
+	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+
+	<!-- Main -->
+	<script src="js/main.js"></script>
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<script>
+	  // Get references to the modal and buttons
+	  const modal = document.getElementById("myModal");
+        const openModalBtn = document.getElementById("openModalBtn");
+        const closeModalBtn = document.getElementById("closeModalBtn");
+
+        // Open the modal when the "Open Modal" button is clicked
+        openModalBtn.addEventListener("click", () => {
+            modal.style.display = "block";
+        });
+
+        // Close the modal when the "x" button is clicked
+        closeModalBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        // Close the modal if the user clicks outside of it
+        window.addEventListener("click", (event) => {
+            if (event.target == modal) {
+                modal.style.display = "block";
+            }
+        });
+
+		
+</script>
+
+	</body>
+</html>
+
