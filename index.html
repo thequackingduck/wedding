@@ -301,6 +301,67 @@
    #colored-icon {
   filter: invert(1); /* Invert the colors (black to white) */
 }
+.icon{
+	width: 25px;
+	margin-top: -1%;
+}
+
+    /* Add this CSS to your stylesheet or in a <style> tag in the HTML */
+		
+
+    .carousel-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .carousel-buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .carousel-nav {
+        background-color: #ffffff;
+        border: 1px solid #cccccc;
+        border-radius: 50%;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .carousel1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .carousel1 li {
+        flex: 0 0 calc(25% - 20px); /* Adjust width and margin as needed */
+        margin: 0 10px;
+        padding: 0;
+        list-style: none;
+    }
+
+    /* Responsive styles for tablet */
+    @media screen and (max-width: 768px) {
+        .carousel1 li {
+            flex: 0 0 calc(50% - 20px); /* Display two images per row on tablets */
+        }
+    }
+
+    /* Responsive styles for mobile */
+    @media screen and (max-width: 480px) {
+        .carousel1 li {
+            flex: 0 0 calc(100% - 20px); /* Display one image per row on mobile */
+        }
+    }
+
+
+
+
+
 
 
 	</style>
@@ -313,7 +374,7 @@
 	
 	<div id="page">
 
-		<div id="myModal" class="modal fade" data-bs-backdrop="static">
+		<!-- <div id="myModal" class="modal fade" data-bs-backdrop="static">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -326,7 +387,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		
 		<nav class="fh5co-nav" role="navigation">
 			<div class="container">
@@ -417,7 +478,7 @@
 								<div class="carousel-item2" id="carousel-item"><img src="images/story10.jpg" alt="Image 10" style="border-radius: 20px;  width: 100%; height: 100%; object-fit: contain;"></div>
 							</div>
 						</div>
-						<script>
+						<!-- <script>
 							const carousel2 = document.querySelector('.carousel2');
 							const items2 = document.querySelectorAll('.carousel-item2');
 							const interval2 = 5000; // Set the interval in milliseconds (5 seconds in this example)
@@ -438,7 +499,7 @@
 							// Initially show the first slide and start auto-advancing
 							showSlide();
 							setInterval(autoAdvance, interval2);
-						</script>
+						</script> -->
 					</div>
 				</div>
 				
@@ -502,10 +563,10 @@
                                     <div class="event text-left">
 										<i class="icon-time-slot" style="opacity: 0%;"></i>
 										<h3 style="text-align: center; color: #fffcef;">SCHEDULE</h3>
-                                      <span style="color: #fffcef;"><strong>2PM</strong> - Liquid therapy—swim, clink, drink</span>
-                                      <span style="color: #fffcef;"><strong>4PM</strong> - Sandy show of drumbeats, folk steps, fire eaters</span>
-                                      <span style="color: #fffcef;"><strong>5PM</strong> - Shooting the breeze</span>
-                                      <span style="color: #fffcef;"><strong>7PM</strong> - Cheers! Repeat! Chow down!</span>
+                                      <span style="color: #fffcef;"><strong>2PM</strong> - Liquid therapy—swim, clink, drink <img src="images/champagne.png" class="icon" id="colored-icon"></span>
+                                      <span style="color: #fffcef;"><strong>4PM</strong> - Sandy show of drumbeats, folk steps, fire eaters <img src="images/drums.png" class="icon" id="colored-icon"></span>
+                                      <span style="color: #fffcef;"><strong>5PM</strong> - Shooting the breeze <img src="images/sunsets.png" class="icon" id="colored-icon"></span>
+                                      <span style="color: #fffcef;"><strong>7PM</strong> - Cheers! Repeat! Chow down! <img src="images/champagne.png" class="icon" id="colored-icon"></span>
                                     </div>
 									<button class="card-button"><a style="color: #fff;" href="details.html#program1">More info</a></button>
                                   </div>
@@ -532,10 +593,10 @@
 											
 											<i class="icon-time-slot" style="opacity: 0%;"></i>
 											<h3 style="text-align: center; color: #fffcef;">SCHEDULE</h3>
-											<span style="color: #fffcef;"><strong>3PM</strong> - Ushering in, setting the scene</span>
-											<span style="color: #fffcef;"><strong>4PM</strong> - Witnessing the vows</span>
-											<span style="color: #fffcef;"><strong>5PM</strong> - Toasting sunsets</span>
-											<span style="color: #fffcef;"><strong>6PM</strong> - Romantic feast</span>
+											<span style="color: #fffcef;"><strong>3PM</strong> - Ushering in, setting the scene <img src="images/beach.png" class="icon" id="colored-icon"></span>
+											<span style="color: #fffcef;"><strong>4PM</strong> - Witnessing the vows <img src="images/wedding.png" class="icon" id="colored-icon"></span>
+											<span style="color: #fffcef;"><strong>5PM</strong> - Toasting sunsets <img src="images/champagne.png" class="icon" id="colored-icon"></span>
+											<span style="color: #fffcef;"><strong>6PM</strong> - Romantic feast <img src="images/dinner.png" class="icon" id="colored-icon"></span>
 										</div>
 										<button class="card-button"><a style="color: #fff;" href="details.html#program2">More info</a></button>
 									</div>
@@ -585,49 +646,205 @@
 						
 					</div>
 				</div>
-				<div class="row row-bottom-padded-md">
-					<div class="col-md-12">
-						<ul id="fh5co-gallery-list" style="justify-content: center;">
-							
-							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/chocolate_hills.webp); "> 
-							<a href="https://www.google.com/maps/place/Chocolate+Hills/@9.8297288,124.1293758,15z/data=!3m1!4b1!4m6!3m5!1s0x33aa3da1a65d72f7:0xd89c856a3307dd67!8m2!3d9.829708!4d124.1396756!16zL20vMDF2N2dj?entry=ttu" target="_blank">
-								<div class="case-studies-summary">
-									
-									<h2 class="icon-location-pin" style="font-size: 20px;">Chocolate Hills</h2>
+				<!-- <div class="row">
+					<div class="col-md-12 animate-box">
+						<div class="wrap-testimony">
+							<div class="owl-carousel-fullwidth">
+								<div class="item" style="display: flex;">
+									<div class="testimony-slide active text-center">
+										<div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+											<img src="images/chocolate-hills.png" style="width: 90%;" alt="user">
+											<span style="color: #fff;"><i class="icon-location-pin"></i> Chocolate Hills</span>
+										</div>										
+									</div>
+									<div class="testimony-slide active text-center" >
+										<div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+											<img src="images/loboc-river.jpg" style="width: 90%;" alt="user">
+											<span style="color: #fff;"><i class="icon-location-pin"></i> Loboc River Cruise</span>
+										</div>
+									</div>
+									<div class="testimony-slide active text-center" >
+										<div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+											<img src="images/tarsier-sanctuary.jpg" style="width: 90%;" alt="user">
+											<span style="color: #fff;"><i class="icon-location-pin"></i> Tarsier Sanctuary</span>
+										</div>
+									</div>
+									<div class="testimony-slide active text-center" >
+										<div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+											<img src="images/man-made-forest.jpg" style="width: 90%;" alt="user">
+											<span style="color: #fff;"><i class="icon-location-pin"></i> Man-made Forest</span>
+										</div>
+									</div>
 								</div>
-							</a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/loboc-river.jpg); ">
-							<a href="https://www.google.com/maps/place/Loboc+River+Cruise/@9.6348028,124.0272504,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4450a8151d9b:0x80a384a306e0aafb!8m2!3d9.6347975!4d124.0298253!16s%2Fg%2F1tx12xjv?entry=ttu" target="_blank" class="color-2">
-								<div class="case-studies-summary">
-									
-									<h2 class="icon-location-pin" style="font-size: 20px;">Loboc River Cruise</h2>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-2.jpg" alt="user">
+										</figure>
+										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+										<blockquote>
+											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, at the coast of the Semantics, a large language ocean."</p>
+										</blockquote>
+									</div>
 								</div>
-							</a>
-						</li>
-	
-	
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/man-made-forest.jpg); ">
-							<a href="https://www.google.com/maps/place/Bilar+Man-Made+Forest/@9.6642376,124.0758991,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4158fa167357:0xef93d9624ddbd561!8m2!3d9.6642323!4d124.078474!16s%2Fg%2F12hl93qk2?entry=ttu" target="_blank" class="color-3">
-								<div class="case-studies-summary">
-									
-									<h2 class="icon-location-pin" style="font-size: 20px;">Man-made Forest</h2>
+								<div class="item">
+									<div class="testimony-slide active text-center">
+										<figure>
+											<img src="images/couple-3.jpg" alt="user">
+										</figure>
+										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
+										<blockquote>
+											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
+										</blockquote>
+									</div>
 								</div>
-							</a>
-						</li>
-						
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/island-hoping.jpg); ">
-							<a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu" target="_blank" class="color-3">
-								<div class="case-studies-summary">
-									
-									<h2 class="icon-location-pin" style="font-size: 20px;">Island Hopping</h2>
-								</div>
-							</a>
-						</li>
-
-						</ul>		
+							</div>
+						</div>
 					</div>
+				</div> -->
+				<div class="row row-bottom-padded-md">
+    <div class="col-md-12">
+        <div class="carousel-container">
+            <ul id="fh5co-gallery-list" class="carousel1">
+                <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/chocolate-hills.png); ">
+                    <a href="https://www.google.com/maps/place/Chocolate+Hills/@9.8297288,124.1293758,15z/data=!3m1!4b1!4m6!3m5!1s0x33aa3da1a65d72f7:0xd89c856a3307dd67!8m2!3d9.829708!4d124.1396756!16zL20vMDF2N2dj?entry=ttu" target="_blank">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Chocolate Hills</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/loboc-river.jpg); ">
+                    <a href="https://www.google.com/maps/place/Loboc+River+Cruise/@9.6348028,124.0272504,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4450a8151d9b:0x80a384a306e0aafb!8m2!3d9.6347975!4d124.0298253!16s%2Fg%2F1tx12xjv?entry=ttu" target="_blank" class="color-2">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Loboc River Cruise</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/tarsier-sanctuary.jpg); ">
+                    <a href="https://www.google.com/maps/place/Bilar+Man-Made+Forest/@9.6642376,124.0758991,17z/data=!3m1!4b1!4m6!3m5!1s0x33aa4158fa167357:0xef93d9624ddbd561!8m2!3d9.6642323!4d124.078474!16s%2Fg%2F12hl93qk2?entry=ttu" target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Tarsier Sanctuary</h2>
+                        </div>
+                    </a>
+                </li>
+                <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/man-made-forest.jpg); ">
+                    <a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu"
+                        target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Man-made Forest</h2>
+                        </div>
+                    </a>
+                </li>
+				<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/danao-adventure.jpg); ">
+                    <a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu"
+                        target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Adventure Park</h2>
+                        </div>
+                    </a>
+                </li>
+				<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/diving.webp); ">
+                    <a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu"
+                        target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Freediving</h2>
+                        </div>
+                    </a>
+                </li>
+				<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/cabugnaw-pool.jpg); ">
+                    <a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu"
+                        target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Cabugnaw Cave</h2>
+                        </div>
+                    </a>
+                </li>
+				<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/can-umantadfalls.jpg); ">
+                    <a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu"
+                        target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Can-umantad Falls</h2>
+                        </div>
+                    </a>
+                </li>
+				<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/becca-cafe.jpg); ">
+                    <a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu"
+                        target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Becca Cafe Bistro</h2>
+                        </div>
+                    </a>
+                </li>
+				<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/hinagdanan-cave.jpg); ">
+                    <a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu"
+                        target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Hinagdanan Cave</h2>
+                        </div>
+                    </a>
+                </li>
+				<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/mist-panglao.webp); ">
+                    <a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu"
+                        target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Mist Panglao</h2>
+                        </div>
+                    </a>
+                </li>
+				<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/island-hoping.jpg); ">
+                    <a href="https://www.google.com/maps/place/%F0%9F%90%A0+Island+Hopping+Tours+Bohol/@9.5460392,123.7537215,17z/data=!3m1!4b1!4m6!3m5!1s0x33abada2f8228e73:0x4ab8ef227c86b9e1!8m2!3d9.5460339!4d123.7562964!16s%2Fg%2F11krh8yt8_?entry=ttu"
+                        target="_blank" class="color-3">
+                        <div class="case-studies-summary">
+                            <h2 class="icon-location-pin" style="font-size: 20px;">Island Hopping</h2>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="carousel-buttons animate-box">
+                <button class="btn rvsp" id="prev-button">Previous</button>
+                <button class="btn rvsp" id="next-button">Next</button>
+            </div>
+        </div>
+    </div>
 				</div>
+
+<!-- <script>
+    const carousel1 = document.querySelector('.carousel1');
+    const items1 = document.querySelectorAll('.carousel1 > li');
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+    const interval1 = 5000; // Set the interval in milliseconds (5 seconds in this example)
+    let currentIndex1 = 0;
+
+    // Function to show the current set of slides
+    function showSlide() {
+        items1.forEach((item, index) => {
+            item.style.display = index >= currentIndex1 && index < currentIndex1 + 4 ? 'block' : 'none';
+        });
+    }
+
+    // Function to go to the next set of slides
+    function nextSlide() {
+        currentIndex1 = (currentIndex1 + 4) % items1.length;
+        showSlide();
+    }
+
+    // Function to go to the previous set of slides
+    function prevSlide() {
+        currentIndex1 = (currentIndex1 - 4 + items1.length) % items1.length;
+        showSlide();
+    }
+
+    // Event listeners for next and previous buttons
+    nextButton.addEventListener('click', nextSlide);
+    prevButton.addEventListener('click', prevSlide);
+
+    // Initially show the first set of slides and start auto-advancing
+    showSlide();
+    setInterval(nextSlide, interval1);
+</script> -->
+
+
 			</div>
 		</div>
 
@@ -691,6 +908,65 @@
 			});
 
     </script>
+	<script>
+		// First Carousel
+		const carousel1 = document.querySelector('.carousel1');
+		const items1 = document.querySelectorAll('.carousel1 > li');
+		const prevButton = document.getElementById('prev-button');
+		const nextButton = document.getElementById('next-button');
+		const interval1 = 5000; // Set the interval in milliseconds (5 seconds in this example)
+		let currentIndex1 = 0;
+	
+		// Function to show the current set of slides for the first carousel
+		function showSlide1() {
+			items1.forEach((item, index) => {
+				item.style.display = index >= currentIndex1 && index < currentIndex1 + 4 ? 'block' : 'none';
+			});
+		}
+	
+		// Function to go to the next set of slides for the first carousel
+		function nextSlide1() {
+			currentIndex1 = (currentIndex1 + 4) % items1.length;
+			showSlide1();
+		}
+	
+		// Function to go to the previous set of slides for the first carousel
+		function prevSlide1() {
+			currentIndex1 = (currentIndex1 - 4 + items1.length) % items1.length;
+			showSlide1();
+		}
+	
+		// Event listeners for next and previous buttons for the first carousel
+		nextButton.addEventListener('click', nextSlide1);
+		prevButton.addEventListener('click', prevSlide1);
+	
+		// Initially show the first set of slides for the first carousel and start auto-advancing
+		showSlide1();
+		setInterval(nextSlide1, interval1);
+	
+		// Second Carousel
+		const carousel2 = document.querySelector('.carousel2');
+		const items2 = document.querySelectorAll('.carousel-item2');
+		const interval2 = 5000; // Set the interval in milliseconds (5 seconds in this example)
+		let currentIndex2 = 0;
+	
+		// Function to show the current slide for the second carousel
+		function showSlide2() {
+			const translateX = -currentIndex2 * 100;
+			carousel2.style.transform = `translateX(${translateX}%)`;
+		}
+	
+		// Function to automatically advance to the next slide for the second carousel
+		function autoAdvance2() {
+			currentIndex2 = (currentIndex2 + 1) % items2.length;
+			showSlide2();
+		}
+	
+		// Initially show the first slide for the second carousel and start auto-advancing
+		showSlide2();
+		setInterval(autoAdvance2, interval2);
+	</script>
+	
 
 </body>
 
